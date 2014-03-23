@@ -1,6 +1,7 @@
 var redisServices = angular.module('redisServices', []);
 
 redisServices.factory('Keys', function($http, $q) {
+
     return {
         all: function() {
             var deferred = $q.defer();
@@ -18,6 +19,7 @@ redisServices.factory('Keys', function($http, $q) {
             $http.get(url).success(function(data) {
                 var type = data['TYPE'][1];
                 var getters = {
+                    none: function() { },
                     string: function() {
                         var url = 'http://localhost:7379/GET/'
                             + encodeURIComponent(key);
@@ -75,4 +77,5 @@ redisServices.factory('Keys', function($http, $q) {
             return deferred.promise;
         }
     };
+
 });

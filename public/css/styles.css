@@ -2,10 +2,6 @@ a {
     color: #333;
 }
 
-#keys {
-
-}
-
 #keys ul {
     overflow: auto;
     padding: 0;
@@ -22,4 +18,11 @@ a {
 
 #details .inner {
     padding: 0 20px;
+}
+
+#details pre {
+    background: #eee;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 3px;
 }

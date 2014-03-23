@@ -9,12 +9,3 @@ redisApp.controller('KeyListCtrl', function($scope, Keys) {
     };
 
 });
-
-
-redisApp.controller('NewJimCtrl', function($scope, Keys) {
-
-    $scope.current = {
-        key: null
-    };
-
-});
