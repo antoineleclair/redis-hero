@@ -1,4 +1,6 @@
-redis-hero
+Redis-Hero
 ==========
 
-A JavaScript application for Redis on top of Webdis.
+Redis client application written in JavaScript with AngularJS. Uses [Webdis](https://github.com/nicolasff/webdis) for HTTP communication with Redis.
+
+Current status: nothing to see, move along.
