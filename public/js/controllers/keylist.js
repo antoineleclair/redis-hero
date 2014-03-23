@@ -8,4 +8,13 @@ redisApp.controller('KeyListCtrl', function($scope, Keys) {
         $scope.current.key = key;
     };
 
+    $scope.Keys = Keys;
+
+    $scope.$watch('Keys.baseUrl', function(val) {
+        console.log('changed', val);
+        Keys.all().then(function(keys) {
+            $scope.keys = keys;
+        });
+    });
+
 });
