@@ -4,4 +4,17 @@ redisApp.controller('KeyListCtrl', function($scope, Keys) {
         $scope.keys = keys;
     });
 
+    $scope.keyClicked = function(key) {
+        $scope.current.key = key;
+    };
+
+});
+
+
+redisApp.controller('NewJimCtrl', function($scope, Keys) {
+
+    $scope.current = {
+        key: null
+    };
+
 });

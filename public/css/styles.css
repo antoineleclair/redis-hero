@@ -1,0 +1,25 @@
+a {
+    color: #333;
+}
+
+#keys {
+
+}
+
+#keys ul {
+    overflow: auto;
+    padding: 0;
+    margin: 0;
+}
+
+#keys ul li a {
+    display: block;
+    padding: 10px;
+    background: #f6f6f6;
+    border-bottom: 1px solid #ccc;
+    text-decoration: none;
+}
+
+#details .inner {
+    padding: 0 20px;
+}
